@@ -1,0 +1,41 @@
+# =========================================
+# 🔧 Node.js Dependencies
+# =========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================================
+# 🎨 Dart Sass / SCSS Compilation Output
+# =========================================
+*.css
+*.css.map
+.sass-cache/
+
+# =========================================
+# 🖥️ System Files
+# =========================================
+.DS_Store
+Thumbs.db
+
+# =========================================
+# ⚙️ Environment & Config Files
+# =========================================
+.env
+.env.local
+.env.*.local
+
+# =========================================
+# 🗂️ Build Output (optional - if you compile to dist/)
+# =========================================
+dist/
+build/
+public/
+
+# =========================================
+# 🔎 VSCode or IDE-specific (optional, but smart)
+# =========================================
+.vscode/
+.idea/
+*.code-workspace
