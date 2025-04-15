@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexter — your home, your freedom</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f4f4f4;
+            font-size: 1.6rem;
+            line-height: 1.6;
+            overflow-x: hidden;
+            color: #fff;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "sidebar header header header"
+                "sidebar story-pictures homes homes"
+                "sidebar realtors realtors features"
+                "sidebar story-content story-content features"
+                "sidebar gallery gallery gallery"
+                "footer footer footer footer";
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 120rem;
+            margin: 1rem auto;
+        }
+
+        .box {
+            background-color: #042822;
+            padding: 2rem;
+            border-radius: 1rem;
+            word-wrap: break-word;
+            transition: transform 0.3s ease-in;
+            cursor: pointer;
+
+        }
+        .box:hover {
+            transform: translateY(-3px) scale(1.01);
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .story-pictures {
+            grid-area: story-pictures;
+        }
+        .s_p_img {
+            max-width: 178px;
+            max-height: 178px;
+            border-radius: 4px;
+        }
+
+        .story-content {
+            grid-area: story-content;
+        }
+
+        .realtors {
+            grid-area: realtors;
+            padding: 4rem;
+        }
+
+        .features {
+            grid-area: features;
+            text-align: center;
+        }
+
+        .homes {
+            grid-area: homes;
+        }
+
+        .gallery {
+            grid-area: gallery;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .features img {
+            width: 248px;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .gallery-grid img {
+            width: 228px;
+            height: auto;
+            border-radius: 0.5rem;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-areas:
+                    "header header header"
+                    "sidebar sidebar sidebar"
+                    "story-pictures homes homes"
+                    "realtors realtors features"
+                    "story-content story-content features"
+                    "gallery gallery gallery"
+                    "footer footer footer";
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "story-pictures"
+                    "homes"
+                    "realtors"
+                    "features"
+                    "story-content"
+                    "gallery"
+                    "footer";
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .features img {
+                width: 70px;
+            }
+
+            .box {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="box sidebar">
+            <h1>Sidebar</h1>
+            <p>Nice info about the sidebar. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </aside>
+
+        <header class="box header">
+            <h1>Ricardo Restaurant Menu</h1>
+            <p>This is the header. It looks nice. Lorem ipsum dolor sit amet.</p>
+        </header>
+
+        <div class="box story-pictures">
+            <h2>Story Pictures</h2>
+            <img class="s_p_img" src="img/gal-9.jpeg" alt="">
+        </div>
+
+        <div class="box story-content">
+            <h2>Story Content</h2>
+        </div>
+
+        <div class="box homes">
+            <div class="card">
+            <h2>Homes</h2>
+            
+        </div>
+
+        <div class="box realtors">
+            <h2>Top Realtors</h2>
+            <div class="realtors-grid">
+                <div class="realtor">
+                    <h4>Realtor 1</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo ad corporis odit quod, eum perspiciatis fuga cum nihil id repellendus commodi corrupti! Voluptates porro distinctio ab modi, amet nemo expedita.</p>
+                </div></h4>
+
+            </div>
+        </div>
+
+        <section class="box features">
+            <h2>Features</h2>
+            <img src="img/gal-11.jpeg" alt="Feature image" />
+        </section>
+
+        <section class="box gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="img/gal-1.jpeg" alt="Gallery Image 1" />
+                <img src="img/gal-1.jpeg" alt="Gallery Image 2" />
+                <img src="img/gal-1.jpeg" alt="Gallery Image 3" />
+                <img src="img/gal-1.jpeg" alt="Gallery Image 4" />
+                <img src="img/gal-1.jpeg" alt="Gallery Image 5" />
+                <img src="img/gal-1.jpeg" alt="Gallery Image 6" />
+            </div>
+        </section>
+
+        <footer class="box footer">
+            <h2>Footer</h2>
+            <p>All rights reserved. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
