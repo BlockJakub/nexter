@@ -34,3 +34,29 @@ body {
         font-size: 3rem;
     }
 }
+
+
+===================================================================================
+
+NOTE FOR CSS GRIDS
+
+====================================================================================
+When you want some more space between the eleents in grid, then use Css grid. always name your columns when toy naming columns.
+
+====================================================================================
+
+NOTE FOR CSS FLEX
+
+=============================================================================================
+
+When you want to use flex you must use margin right then on a last element no margin at all.
+
+=============================================================================================
+
+
+
+
+
+
+
+!!!!!  *********** !!!!! ******** HOW TO USE THE ::before and ::after
